@@ -1,4 +1,5 @@
 @orange: #cc6f08;
+@dark: #212121;
 
 body,
 html {
@@ -16,7 +17,7 @@ html {
 
   .vmas-header {
     padding: 11px;
-    background: #212121;
+    background: @dark;
 
     .navbar-brand-padding {
       padding: 0 40px;
@@ -111,8 +112,8 @@ html {
 
 .why-taxis-section {
   margin: 0;
-  padding-top: 30px;
-  background-color: #212121;
+  padding: 30px 0;
+  background-color: @dark;
 
   .white {
     color: #fff;
@@ -121,4 +122,37 @@ html {
   .icons-container {
     margin-top: 30px;
   }
+}
+// Video container
+
+video {
+  position: relative;
+  top: 50%;
+  left: 50%;
+  min-width: 100%;
+  min-height: 100%;
+  width: 100%;
+  height: auto;
+  transform: translateX(-50%);
+  transition: 1s opacity;
+}
+// Advantages Section
+
+.advantages-section.row {
+  padding: 30px 0;
+  margin: 0;
+  color: #fff;
+  background-color: @dark;
+
+.glyphicon-container {
+  padding: 10px;
+}
+  .glyphicon {
+    font-size: 80px;
+  }
+}
+// Additional Services Section
+
+.additional-services-section {
+  padding: 30px 0;
 }
